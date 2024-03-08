@@ -4,6 +4,9 @@ import nltk
 import pandas as pd
 from nltk.stem import PorterStemmer
 
+
+nltk.download('punkt')
+
 def load_data(input_file):
     """Lea el archivo usando pandas y devuelva un DataFrame"""
     df = pd.read_csv(input_file)
